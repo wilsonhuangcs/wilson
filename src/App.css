@@ -84,6 +84,13 @@
   background-size: cover;
 }
 
+@media (min-width: 1500px) {
+  .Home {
+    height: 1000px;
+  }
+}
+
+
 .Home h2 {
   font-weight: medium;
   font-size: 50px;
@@ -209,6 +216,13 @@
   font-family: sans-serif;
   text-align: left;
  }
+
+ @media (min-width: 1500px) {
+  .Home {
+    position: relative;
+    left: 60%;
+  }
+}
 
  @media (max-width: 768px) {
   .aboutme {
