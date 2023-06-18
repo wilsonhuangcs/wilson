@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/wilsonhuang/static/css/main.708937e9.css",
+    "main.js": "/wilsonhuang/static/js/main.ccb20ea5.js",
+    "static/media/propic.png": "/wilsonhuang/static/media/propic.fc5e832fc12cfaf9838f.png",
+    "static/media/websiteback.png": "/wilsonhuang/static/media/websiteback.16c616293e09076d24f2.png",
+    "static/media/astro.png": "/wilsonhuang/static/media/astro.579226ffdef57b402b4d.png",
+    "static/media/website.png": "/wilsonhuang/static/media/website.03c9c4b04c51ee745f18.png",
+    "index.html": "/wilsonhuang/index.html",
+    "main.708937e9.css.map": "/wilsonhuang/static/css/main.708937e9.css.map",
+    "main.ccb20ea5.js.map": "/wilsonhuang/static/js/main.ccb20ea5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.708937e9.css",
+    "static/js/main.ccb20ea5.js"
+  ]
+}
