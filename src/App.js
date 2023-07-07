@@ -10,6 +10,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { IoIosArrowDown } from "react-icons/io"
 import astro from './astro.png';
 import website from './website.png';
+import chase from './for.png';
 import { Link } from 'react-scroll';
 
 
@@ -49,7 +50,7 @@ const App = () => {
                 <SlSocialLinkedin size='3rem' color='black'/>           
                 <h3 className="abouttitle">LINKEDIN</h3>
                 <h3 className="abouttitle">REDIRECT</h3>
-                <a href="https://www.linkedin.com/in/wilsonhuangcs/" className="aboutsubtitle" target="_blank" rel="noopener noreferrer"> CLICK HERE </a>
+                <a href="https://google.com" className="aboutsubtitle" target="_blank" rel="noopener noreferrer"> CLICK HERE </a>
             </div>
           </div>
         </div>
@@ -80,7 +81,15 @@ const App = () => {
               <div className="info">
                 <h2> Personal Website </h2>
                 <p> React, CSS, HTML, JS </p>
-                <button onClick={() => window.open('https://github.com/wilsonhuangcs/wilson', '_blank')}> GITHUB </button>
+                <button onClick={() => window.open('https://github.com/wilsonhuangcs/wilsonhuang', '_blank')}> GITHUB </button>
+              </div>
+            </div>
+            <div className="image">
+              <img src={chase} alt="chase" className="grid-image"/>
+              <div className="info">
+                <h3> SWE Virtual Experience </h3>
+                <p> Perspective, React, TypeScript </p>
+                <button onClick={() => window.open('https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_SAEvHAdxStKxuZb4t_1688709554512_completion_certificate.pdf', '_blank')}> Certificate </button>
               </div>
             </div>
           </div>
