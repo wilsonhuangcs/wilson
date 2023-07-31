@@ -11,6 +11,7 @@ import { IoIosArrowDown } from "react-icons/io"
 import astro from './astro.png';
 import website from './website.png';
 import chase from './for.png';
+import att from './att.png';
 import { Link } from 'react-scroll';
 
 
@@ -90,6 +91,14 @@ const App = () => {
                 <h3> SWE Virtual Experience </h3>
                 <p> Perspective, React, TypeScript </p>
                 <button onClick={() => window.open('https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_SAEvHAdxStKxuZb4t_1688709554512_completion_certificate.pdf', '_blank')}> Certificate </button>
+              </div>
+            </div>
+            <div className="image">
+              <img src={att} alt="att" className="grid-image"/>
+              <div className="info">
+                <h2> AT&T SWE Externship </h2>
+                <p> Agile, Machine Learning, & MORE! </p>
+                <button onClick={() => window.open('https://www.credly.com/badges/1c10a4a9-3ef3-4078-889b-079c1cde03f2/public_url', '_blank')}> BADGE </button>
               </div>
             </div>
           </div>

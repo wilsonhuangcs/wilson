@@ -148,7 +148,7 @@
 }
 
 .Projects {
-  height: 600px;
+  height: 1000px;
   padding-top: 80px; 
   text-align: center;
   
@@ -266,7 +266,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3%;
-  gap: 30px;
+  gap: 100px;
 }
 
 .grid-image {
