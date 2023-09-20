@@ -69,6 +69,19 @@
   color: #333;
 }
 
+@media (max-width: 480px) {
+  .navbar {
+    font-size: small;
+    width: 480px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar li {
+    font-size: small;
+    left: 5%;
+  }
+}
+
 .Home {
   height: 600px;
   display: flex;
@@ -147,13 +160,25 @@
   align-items: center; 
 }
 
+@media (max-width: 1000px) {
+  .aboutme .description {
+    font-size: small;
+    width: 480px;
+  }
+}
+
 .Projects {
   height: 1000px;
   padding-top: 80px; 
   text-align: center;
-  
 }
 
+
+@media (max-width: 700px) {
+  .Projects {
+    height: 2000px;
+  }
+}
 .Experience {
   height: 400px;
   padding-top: 200px; 
@@ -206,36 +231,46 @@
  }
 
  .aboutme {
-  position: relative;
-  width: 600px;
-  top: 170%; 
-  left: 64%;
-  transform: translate(-50%, -150%); 
+  position: absolute;
+  top: 150%;
+  left: 42%;
+  width: 45%;
   font-size: 20px;
   font-weight: lighter;
   font-family: sans-serif;
   text-align: left;
  }
-
- @media (min-width: 1500px) {
-  .aboutme {
-    position: relative;
-    left: 60%;
+ @media (max-width: 480px) {
+  .pro {
+    font-size: 10px;
+    width: 50%;
+    height: 50%;
   }
-}
+ }
 
- @media (max-width: 768px) {
-  .aboutme {
-    font-size: x-small;
-    position: absolute;
-    width: 450px; 
-    height: 300px; 
-    top: 170%;
-    left: 78%;
-    font-size: 20px;
-    transform: translate(-50%, -50%);
+ @media (max-width: 480px) {
+  .aboutgrid {
+    font-size: 10px;
+    width: 50%;
+    height: 50%;
   }
-}
+ }
+
+ @media (max-width: 480px) {
+  .aboutbox {
+    font-size: 10px;
+    width: 50%;
+    height: 50%;
+  }
+ }
+
+ @media (max-width: 480px) {
+  .aboutme {
+    font-size: 10px;
+    width: 50%;
+  }
+ }
+
 
 .Projects h2 {
   text-align: center;

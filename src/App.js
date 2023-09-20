@@ -44,14 +44,14 @@ const App = () => {
               <div className="aboutbox">
                 <GrDocumentText size='3rem' color='black'/>           
                 <h3 className="abouttitle"> RESUME DOWNLOAD</h3>
-                <span className="aboutsubtitle">CLICK HERE</span>
+                <a href="Wilson_Huang_WH_Resume.pdf" download="Wilson Huang WH Resume" className="aboutsubtitle"> CLICK HERE</a>
               </div>
 
               <div className="aboutbox">
                 <SlSocialLinkedin size='3rem' color='black'/>           
                 <h3 className="abouttitle">LINKEDIN</h3>
                 <h3 className="abouttitle">REDIRECT</h3>
-                <a href="https://google.com" className="aboutsubtitle" target="_blank" rel="noopener noreferrer"> CLICK HERE </a>
+                <a href="https://www.linkedin.com/in/wilsonhuangcs/" className="aboutsubtitle" target="_blank" rel="noopener noreferrer"> CLICK HERE </a>
             </div>
           </div>
         </div>
