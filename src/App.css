@@ -160,6 +160,13 @@
   align-items: center; 
 }
 
+@media (min-width: 1500px) {
+  .aboutme .description {
+    position: relative;
+    left: 60%;
+  }
+}
+
 @media (max-width: 1000px) {
   .aboutme .description {
     font-size: small;
