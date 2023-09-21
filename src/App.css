@@ -169,7 +169,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (max-width: 1300px) {
   .aboutme .description {
     position: absolute;
     font-size: medium;
