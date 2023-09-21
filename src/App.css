@@ -161,7 +161,7 @@
 }
 
 @media (min-width: 1500px) {
-  .aboutme .description {
+  .aboutme {
     position: relative;
     left: 60%;
   }
