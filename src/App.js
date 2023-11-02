@@ -12,6 +12,7 @@ import astro from './astro.png';
 import website from './website.png';
 import chase from './for.png';
 import att from './att.png';
+import credera from './credera.png';
 import { Link } from 'react-scroll';
 
 
@@ -102,13 +103,18 @@ const App = () => {
               </div>
             </div>
           </div>
-          <h1>  MORE PROJECTS TO COME...</h1>
         </div>
         <div className="Experience"> 
           <h2> EXPERIENCE </h2>
           <span> MY PROFESSIONAL JOURNEY</span>
-          <h3> COMING SOON... </h3>
-          <div class="loading-bar">LOADING...</div>
+          <div className="experience-grid">
+            <div className="experience-image">
+              <img src={credera} alt="credera" className="grid-image"/>
+              <div className="experiences">
+                <h2> Technology Solutions Intern </h2>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="bottom">
           <ul>
@@ -118,7 +124,7 @@ const App = () => {
             <p> • </p>
             <li onClick={() => window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqTfgnMBFvfmFrzwtFZfgNFptrNcQKNSCnjKwCHpxjJtzQbMKZzjGsnDcwPlpSrqbpdptL', '_blank')}> EMAIL </li>
             <p> • </p>
-            <li onClick={() => window.open('https://www.youtube.com/watch?v=AdaDtrcN3-4&pp=ygUlbmFoIHNwaWRlcm1hbiBhY3Jvc3MgdGhlIHNwaWRlciB2ZXJzZQ%3D%3D', '_blank')} > 🤠 </li>
+            <li> 🤠 </li>
           </ul>
           <span> Created by Wilson Huang </span>
         </div>
