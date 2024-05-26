@@ -478,8 +478,8 @@ body {
 
 @media screen and (max-width: 480px) {
   .ExperienceBox {
-    width: 335px; 
-    height: 140px;
+    width: 340px; 
+    height: 190px;
   }
 }
 
@@ -515,7 +515,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .ExperienceBullets {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -538,7 +538,7 @@ body {
   .TimelineCircle2 {
     position: relative;
     right: 8px;
-    top: 150px;
+    top: 200px;
   }
 }
 
@@ -572,7 +572,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .ExperienceBox2 {
-    width: 335px; 
+    width: 340px; 
     height: 90px;
   }
 }
