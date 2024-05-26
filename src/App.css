@@ -27,7 +27,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
+  .App {
     overflow-x: hidden;
     }
 }
