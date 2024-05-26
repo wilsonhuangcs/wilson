@@ -23,7 +23,6 @@ body {
 @media (max-height: 480px) {
   body {
     height: 1000px; 
-
   }
 }
 
@@ -62,7 +61,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .InfoContainer {
-    width: 480px; 
+    width: 450px; 
     height: 800px;
   }
 }
@@ -82,8 +81,8 @@ body {
 
 @media screen and (max-width: 480px) {
   .InfoHeader {
-    width: 430px; 
-    height: 100%;
+    width: 400px; 
+    height: 1000px;
   }
 }
 
@@ -138,7 +137,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .midSection {
-    width: 440px; 
+    width: 400px; 
     height: 100%;
 
     display: flex;
@@ -156,7 +155,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .WelcomeArea {
-    width: 440px; 
+    width: 400px; 
     height: 100%;
   }
 }
@@ -171,6 +170,12 @@ body {
   font-size: 80px;
   letter-spacing: 5px;
   font-weight: 200;
+}
+
+@media screen and (max-width: 480px) {
+  .WelcomeMessage {
+    font-size: 70px;
+  }
 }
 
 .AboutMe {
@@ -216,6 +221,8 @@ body {
   .ProjectSection {
     width: 440px; 
     height: 100%;
+    position: relative;
+    top: -30px;
 
     display: flex;
     justify-content: center;
@@ -248,8 +255,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .ProjectList {
-    width: 440px; 
-    height: 100%;
+    width: 440px;
   }
 }
 
