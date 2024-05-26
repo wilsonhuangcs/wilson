@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { SiGmail } from "react-icons/si";
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
@@ -25,13 +25,13 @@ function App() {
       name: 'UH Energy',
       description: 'A web application created with a team of 4 developers that allows users to be able to generate a fuel quote and ultimately purchase fuel. Utilized MongoDB for backend and React for frontend development ultimately allowing us to create a fully functional web application that had above 80% code coverage.',
       link: 'https://github.com/rmrahman430/Software-Design-Project-Grp-54',
-      frameworks: ['React', 'MongoDB', 'Azure', 'GitHub']
+      frameworks: ['React', 'MongoDB', 'Jest', 'CSS', 'HTML', 'JavaScript']
     },
     {
       name: 'Dropawf',
       description: 'A postal office web application created with a team of 5 developers utilizing GitHub for version control. This web application utilizes a MySQL backend to allow users to be able to view their tracking, order history, profile information, and much more. As well as allowing users to be able to ship packages and purchase items.',
       link: 'https://dropawf.pages.dev/',
-      frameworks: ['React', 'MySQL', 'Jest', 'GitHub']
+      frameworks: ['React', 'MySQL', 'Azure', 'CSS', 'HTML', 'JavaScript']
     },
   ];
 
@@ -94,7 +94,7 @@ function App() {
                 {showExperiences && (
                   <>
                     <div className="ExperienceContainer">
-                      <p className="ExperienceHeader"> Professional Experiences </p>
+                      <p className="ExperienceHeader"> My Professional Journey... </p>
                       <div className="ExperienceTimeline">
                         <div className="Timeline">
                           <div className="TimelineCircle">
@@ -103,7 +103,7 @@ function App() {
                                 <div className="ExperienceTitle">
                                   AT&T
                                   <div className="ExperienceDetails">
-                                     Software Engineer Extern &nbsp; |  &nbsp; Houston, TX (Remote)  &nbsp; |  &nbsp; July 2023
+                                     Software Engineer Extern &nbsp; |  &nbsp; Remote &nbsp; |  &nbsp; July 2023
                                      <div className="ExperienceBullets">
                                       <li>
                                         Attained a comprehensive blend of business and technical expertise through 80 hours of immersive online learning sessions
@@ -128,10 +128,10 @@ function App() {
                                 <div className="ExperienceTitle">
                                   Credera
                                   <div className="ExperienceDetails">
-                                     Software Engineer Consultant &nbsp; |  &nbsp; Houston, TX &nbsp; |  &nbsp; June 2024 - August 2024
+                                     Software Engineer Consultant Intern &nbsp; |  &nbsp; Houston, TX &nbsp; |  &nbsp; June 2024 - August 2024
                                      <div className="ExperienceBullets">
                                       <li>
-                                        Currently working here!
+                                        I'm currently working here!
                                       </li>
                                      </div>
                                   </div>
