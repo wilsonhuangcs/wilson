@@ -63,6 +63,10 @@ body {
   .InfoContainer {
     width: 450px; 
     height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
@@ -395,6 +399,12 @@ body {
   font-weight: 200;
 }
 
+@media screen and (max-width: 480px) {
+  .ExperienceHeader {
+    font-size: 25px;
+  }
+}
+
 .ExperienceTimeline {
   position: relative;
   top: -50px;
@@ -458,8 +468,8 @@ body {
 
 @media screen and (max-width: 480px) {
   .ExperienceBox {
-    width: 400px; 
-    height: 150px;
+    width: 360px; 
+    height: 140px;
   }
 }
 
@@ -482,9 +492,21 @@ body {
   font-family: 'QuicksandItalics';
 }
 
+@media screen and (max-width: 480px) {
+  .ExperienceDetails {
+    font-size: 12px;
+  }
+}
+
 .ExperienceBullets {
   font-size: 12px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .ExperienceBullets {
+    font-size: 10px;
+  }
 }
 
 .TimelineCircle2 {
@@ -500,6 +522,14 @@ body {
   position: relative;
   right: 8px;
   top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+  .TimelineCircle2 {
+    position: relative;
+    right: 8px;
+    top: 150px;
+  }
 }
 
 .ConnectingLine2 {
@@ -532,7 +562,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .ExperienceBox2 {
-    width: 400px; 
-    height: 100px;
+    width: 360px; 
+    height: 90px;
   }
 }
