@@ -26,6 +26,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+    }
+}
+
 @media (min-height: 481px) and (max-height: 800px) {
   body {
     height: 800px; 
@@ -42,8 +48,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .InfoContainer {
