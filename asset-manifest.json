@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/wilson/static/css/main.4cb224bc.css",
-    "main.js": "/wilson/static/js/main.d9ffc547.js",
+    "main.css": "/wilson/static/css/main.6abc482b.css",
+    "main.js": "/wilson/static/js/main.62403633.js",
     "static/media/linkedin.png": "/wilson/static/media/linkedin.906efdd4ca5db62655a0.png",
     "static/media/Quicksand_Bold.otf": "/wilson/static/media/Quicksand_Bold.90bf44d43965116d771b.otf",
     "static/media/Quicksand_Book.otf": "/wilson/static/media/Quicksand_Book.c86e224d3dd24efee96a.otf",
     "static/media/Quicksand_Light_Oblique.otf": "/wilson/static/media/Quicksand_Light_Oblique.e0b562f7cc6c4d8b6f9d.otf",
     "index.html": "/wilson/index.html",
-    "main.4cb224bc.css.map": "/wilson/static/css/main.4cb224bc.css.map",
-    "main.d9ffc547.js.map": "/wilson/static/js/main.d9ffc547.js.map"
+    "main.6abc482b.css.map": "/wilson/static/css/main.6abc482b.css.map",
+    "main.62403633.js.map": "/wilson/static/js/main.62403633.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb224bc.css",
-    "static/js/main.d9ffc547.js"
+    "static/css/main.6abc482b.css",
+    "static/js/main.62403633.js"
   ]
 }
