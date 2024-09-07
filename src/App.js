@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
 import { SiGmail } from "react-icons/si";
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
 
@@ -10,28 +10,32 @@ function App() {
 
   const projects = [
     {
-      name: 'Astro Race Galaxy',
-      description: 'A space-themed trivia game created to inspire children to pursue careers in aerospace, created at a hackathon hosted by JSC NASA. Collaborated with a team of three using React to create the game and present in front of a panel of judges to receive feedback!',
-      link: 'https://github.com/wilsonhuangcs/JSC-Hack-2023',
-      frameworks: ['React', 'CSS', 'HTML', 'JavaScript']
+      name: "Astro Race Galaxy",
+      description:
+        "A space-themed trivia game created to inspire children to pursue careers in aerospace, created at a hackathon hosted by JSC NASA. Collaborated with a team of three using React to create the game and present in front of a panel of judges to receive feedback!",
+      link: "https://github.com/wilsonhuangcs/JSC-Hack-2023",
+      frameworks: ["React", "CSS", "HTML", "JavaScript"],
     },
     {
-      name: 'Personal Website',
-      description: 'A personal portfolio website created to showcase my journey in the ever-expanding field of computer science. Created as one of my first projects using React, and showcases how much I have been able to learn JavaScript, CSS, and HTML. As well as hosting the site using GitHub pages.',
-      link: 'https://wilsonhuangcs.github.io/wilson/',
-      frameworks: ['React', 'CSS', 'HTML', 'JavaScript']
+      name: "Personal Website",
+      description:
+        "A personal portfolio website created to showcase my journey in the ever-expanding field of computer science. Created as one of my first projects using React, and showcases how much I have been able to learn JavaScript, CSS, and HTML. As well as hosting the site using GitHub pages.",
+      link: "https://wilsonhuangcs.github.io/wilson/",
+      frameworks: ["React", "CSS", "HTML", "JavaScript"],
     },
     {
-      name: 'UH Energy',
-      description: 'A web application created with a team of 4 developers that allows users to be able to generate a fuel quote and ultimately purchase fuel. Utilized MongoDB for backend and React for frontend development ultimately allowing us to create a fully functional web application that had above 80% code coverage.',
-      link: 'https://github.com/rmrahman430/Software-Design-Project-Grp-54',
-      frameworks: ['React', 'MongoDB', 'Jest', 'CSS', 'HTML', 'JavaScript']
+      name: "UH Energy",
+      description:
+        "A web application created with a team of 4 developers that allows users to be able to generate a fuel quote and ultimately purchase fuel. Utilized MongoDB for backend and React for frontend development ultimately allowing us to create a fully functional web application that had above 80% code coverage.",
+      link: "https://github.com/rmrahman430/Software-Design-Project-Grp-54",
+      frameworks: ["React", "MongoDB", "Jest", "CSS", "HTML", "JavaScript"],
     },
     {
-      name: 'Dropawf',
-      description: 'A postal office web application created with a team of 5 developers utilizing GitHub for version control. This web application utilizes a MySQL backend to allow users to be able to view their tracking, order history, profile information, and much more. As well as allowing users to be able to ship packages and purchase items.',
-      link: 'https://dropawf.pages.dev/',
-      frameworks: ['React', 'MySQL', 'Azure', 'CSS', 'HTML', 'JavaScript']
+      name: "Dropawf",
+      description:
+        "A postal office web application created with a team of 5 developers utilizing GitHub for version control. This web application utilizes a MySQL backend to allow users to be able to view their tracking, order history, profile information, and much more. As well as allowing users to be able to ship packages and purchase items.",
+      link: "https://dropawf.pages.dev/",
+      frameworks: ["React", "MySQL", "Azure", "CSS", "HTML", "JavaScript"],
     },
   ];
 
@@ -56,14 +60,48 @@ function App() {
   return (
     <div className="App">
       <div className="FlipContainer">
-        <div className={`FlipCard ${flipCounter % 2 === 0 ? 'flip-out' : 'flip-in'}`}>
+        <div
+          className={`FlipCard ${
+            flipCounter % 2 === 0 ? "flip-out" : "flip-in"
+          }`}
+        >
           <div className="InfoContainer">
             <div className="InfoHeader">
-              <div className="InfoPic" onClick={handleBackClick} ></div>
+              <div className="InfoPic" onClick={handleBackClick}></div>
               <div className="InfoIconHolder">
-                <div className="InfoIcons" onClick={() => window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTMXKRVWDCDQzhcdrxsnbRZPJBgBSMdbrbbjPLJrgGmrRCzRQpGGxgMXKsnzzGXtvtdsZL', '_blank')}> <SiGmail /> </div>
-                <div className="InfoIcons" onClick={() => window.open('https://github.com/wilsonhuangcs/', '_blank')}> <TfiGithub /> </div>
-                <div className="InfoIcons" onClick={() => window.open('https://www.linkedin.com/in/wilsonhuangcs/', '_blank')}> <TfiLinkedin /> </div>
+                <div
+                  className="InfoIcons"
+                  onClick={() =>
+                    window.open(
+                      "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTMXKRVWDCDQzhcdrxsnbRZPJBgBSMdbrbbjPLJrgGmrRCzRQpGGxgMXKsnzzGXtvtdsZL",
+                      "_blank"
+                    )
+                  }
+                >
+                  {" "}
+                  <SiGmail />{" "}
+                </div>
+                <div
+                  className="InfoIcons"
+                  onClick={() =>
+                    window.open("https://github.com/wilsonhuangcs/", "_blank")
+                  }
+                >
+                  {" "}
+                  <TfiGithub />{" "}
+                </div>
+                <div
+                  className="InfoIcons"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/wilsonhuangcs/",
+                      "_blank"
+                    )
+                  }
+                >
+                  {" "}
+                  <TfiLinkedin />{" "}
+                </div>
               </div>
             </div>
 
@@ -72,21 +110,39 @@ function App() {
                 {selectedProject === null && !showExperiences && (
                   <>
                     <p className="WelcomeMessage"> Welcome. </p>
-                    <p className="AboutMe"> My name is Wilson Huang, I'm currently a senior
-                      at the University of Houston majoring in Computer Science. </p>
-                    <p className="AboutMe"> I'm always looking for ways to develop myself technically and
-                      professionally and I'm currently super excited to start my first internship as a Technology Solutions
-                      Consultant with Credera! </p>
+                    <p className="AboutMe">
+                      {" "}
+                      My name is Wilson Huang, I'm currently a senior at the
+                      University of Houston majoring in Computer Science.{" "}
+                    </p>
+                    <p className="AboutMe">
+                      {" "}
+                      I'm always looking for ways to develop myself technically
+                      and professionally and I'm currently super excited to
+                      start my first internship as a Technology Solutions
+                      Consultant with Credera!{" "}
+                    </p>
                   </>
                 )}
                 {selectedProject !== null && (
                   <>
                     <p className="ProjectName"> {selectedProject.name} </p>
                     <p className="AboutMe"> {selectedProject.description} </p>
-                    <p className="Link" onClick={() => window.open(selectedProject.link, '_blank')}> View Link </p>
+                    <p
+                      className="Link"
+                      onClick={() =>
+                        window.open(selectedProject.link, "_blank")
+                      }
+                    >
+                      {" "}
+                      View Link{" "}
+                    </p>
                     <div className="Frameworks">
                       {selectedProject.frameworks.map((framework, index) => (
-                        <div key={index} className="FrameworkCircles"> {framework} </div>
+                        <div key={index} className="FrameworkCircles">
+                          {" "}
+                          {framework}{" "}
+                        </div>
                       ))}
                     </div>
                   </>
@@ -94,7 +150,10 @@ function App() {
                 {showExperiences && (
                   <>
                     <div className="ExperienceContainer">
-                      <p className="ExperienceHeader"> My Professional Journey... </p>
+                      <p className="ExperienceHeader">
+                        {" "}
+                        My Professional Journey...{" "}
+                      </p>
                       <div className="ExperienceTimeline">
                         <div className="Timeline">
                           <div className="TimelineCircle">
@@ -103,19 +162,30 @@ function App() {
                                 <div className="ExperienceTitle">
                                   AT&T
                                   <div className="ExperienceDetails">
-                                     Software Engineer Extern &nbsp; |  &nbsp; Remote &nbsp; |  &nbsp; July 2023
-                                     <div className="ExperienceBullets">
+                                    Software Engineer Extern &nbsp; | &nbsp;
+                                    Remote &nbsp; | &nbsp; July 2023
+                                    <div className="ExperienceBullets">
                                       <li>
-                                        Attained a comprehensive blend of business and technical expertise through 80 hours of immersive online learning sessions
+                                        Attained a comprehensive blend of
+                                        business and technical expertise through
+                                        80 hours of immersive online learning
+                                        sessions
                                       </li>
 
                                       <li>
-                                        Nurtured a deep-seated grasp of agile methodologies, machine learning, cloud architecture, API, and software engineering
+                                        Nurtured a deep-seated grasp of agile
+                                        methodologies, machine learning, cloud
+                                        architecture, API, and software
+                                        engineering
                                       </li>
 
                                       <li>
-                                        Garnered invaluable insights and mentorship on leadership and career progression by engaging with industry professional                                      </li>
-                                     </div>
+                                        Garnered invaluable insights and
+                                        mentorship on leadership and career
+                                        progression by engaging with industry
+                                        professional
+                                      </li>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -128,12 +198,31 @@ function App() {
                                 <div className="ExperienceTitle">
                                   Credera
                                   <div className="ExperienceDetails">
-                                     Software Engineer Consultant Intern &nbsp; |  &nbsp; Houston, TX &nbsp; |  &nbsp; June 2024 - August 2024
-                                     <div className="ExperienceBullets">
+                                    Software Engineer Consultant Intern &nbsp; |
+                                    &nbsp; Houston, TX &nbsp; | &nbsp; June 2024
+                                    - August 2024
+                                    <div className="ExperienceBullets">
                                       <li>
-                                        I'm currently working here!
+                                        Developed and maintained web
+                                        applications using Angular and .Net
+                                        frameworks for a major Houston energy
+                                        company
                                       </li>
-                                     </div>
+
+                                      <li>
+                                        Employed Agile methodologies, including
+                                        Scrum, to drive iterative development
+                                        processes, facilitating regular feedback
+                                        loops
+                                      </li>
+
+                                      <li>
+                                        Collaborated closely with
+                                        cross-functional teams, including
+                                        product managers, designers, and other
+                                        developers, to complete tickets
+                                      </li>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -161,7 +250,13 @@ function App() {
                         {project.name}
                       </li>
                     ))}
-                    <li className="ProfessionalExperiences" onClick={handleExperiencesClick}> Professional Experiences </li>
+                    <li
+                      className="ProfessionalExperiences"
+                      onClick={handleExperiencesClick}
+                    >
+                      {" "}
+                      Professional Experiences{" "}
+                    </li>
                   </div>
                 </div>
               </div>
@@ -172,11 +267,41 @@ function App() {
           <div className="ProjectInfoContainer">
             <div className="InfoContainer">
               <div className="InfoHeader">
-                <div className="InfoPic" onClick={handleBackClick} ></div>
+                <div className="InfoPic" onClick={handleBackClick}></div>
                 <div className="InfoIconHolder">
-                  <div className="InfoIcons" onClick={() => window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTMXKRVWDCDQzhcdrxsnbRZPJBgBSMdbrbbjPLJrgGmrRCzRQpGGxgMXKsnzzGXtvtdsZL', '_blank')}> <SiGmail /> </div>
-                  <div className="InfoIcons" onClick={() => window.open('https://github.com/wilsonhuangcs/', '_blank')}> <TfiGithub /> </div>
-                  <div className="InfoIcons" onClick={() => window.open('https://www.linkedin.com/in/wilsonhuangcs/', '_blank')}> <TfiLinkedin /> </div>
+                  <div
+                    className="InfoIcons"
+                    onClick={() =>
+                      window.open(
+                        "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTMXKRVWDCDQzhcdrxsnbRZPJBgBSMdbrbbjPLJrgGmrRCzRQpGGxgMXKsnzzGXtvtdsZL",
+                        "_blank"
+                      )
+                    }
+                  >
+                    {" "}
+                    <SiGmail />{" "}
+                  </div>
+                  <div
+                    className="InfoIcons"
+                    onClick={() =>
+                      window.open("https://github.com/wilsonhuangcs/", "_blank")
+                    }
+                  >
+                    {" "}
+                    <TfiGithub />{" "}
+                  </div>
+                  <div
+                    className="InfoIcons"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/wilsonhuangcs/",
+                        "_blank"
+                      )
+                    }
+                  >
+                    {" "}
+                    <TfiLinkedin />{" "}
+                  </div>
                 </div>
               </div>
 
@@ -184,10 +309,19 @@ function App() {
                 <div className="WelcomeArea">
                   <p className="ProjectName"> {selectedProject.name} </p>
                   <p className="AboutMe"> {selectedProject.description} </p>
-                  <p className="Link" onClick={() => window.open(selectedProject.link, '_blank')}> View Link </p>
+                  <p
+                    className="Link"
+                    onClick={() => window.open(selectedProject.link, "_blank")}
+                  >
+                    {" "}
+                    View Link{" "}
+                  </p>
                   <div className="Frameworks">
                     {selectedProject.frameworks.map((framework, index) => (
-                      <div key={index} className="FrameworkCircles"> {framework} </div>
+                      <div key={index} className="FrameworkCircles">
+                        {" "}
+                        {framework}{" "}
+                      </div>
                     ))}
                   </div>
                 </div>
